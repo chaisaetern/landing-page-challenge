@@ -1,0 +1,649 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.red {
+    color: red !important;
+}
+
+/* Header */
+.header {
+    background: url("./img/raccoon_city_movie.jpg") no-repeat fixed center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.wallpaper-bg {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.5), rgba(0,0,0,.75));
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "Trajan Pro Bold";
+    src: url("./fonts/TrajanPro-Bold.otf");
+}
+
+@font-face {
+    font-family: "Cochin";
+    src: url("./fonts/Cochin.ttf");
+}
+
+.landing-page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+}
+
+.landing-page-title h1 {
+    font-family: "Trajan Pro Bold";
+    font-size: 3rem;
+    color: red;
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+}
+
+.landing-page-title h2 {
+    font-family: "Cochin";
+    font-size: 2.5rem;
+    color: rgb(157, 157, 157);
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+}
+
+.landing-page-title h3 {
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.landing-page-title a {
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+    text-decoration: unerline;
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.landing-page-title a:hover {
+    color: #fff;
+}
+
+.landing-page-title > button {
+    width: 8rem;
+    height: 2.5rem;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+    transition: 0.5s;
+}
+
+.landing-page-title > button:hover {
+    background-color: maroon;
+
+}
+
+.landing-page-title button > img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+#landing-page-trailer {
+    display: none;
+}
+
+/* Nav/Menu */
+.nav {
+    width: inherit;
+    height: 5em;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav > h1 {
+    color: #fff;
+    font-family: "Comforter", cursive;
+    font-size: 3em;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.nav h1 > img {
+    width: 2em;
+    height: 1.5em;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    z-index: -1;
+}
+
+.nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav ul > li {
+    margin: 8px;
+}
+
+.nav ul li > a {
+    text-decoration: none;
+    margin: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.nav ul li > a:hover {
+    color: red;
+}
+
+.nav ul li:nth-child(4) a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li:nth-child(6) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.magnifying-glass {
+    width: 1rem;
+    height: 1.5rem;
+    margin: 2px;
+}
+
+.red-ribbon {
+    width: 3rem;
+    position: relative;
+    bottom: 0.2rem;
+}
+
+.header-content {
+    padding: 1rem;
+    color: #fff;
+}
+
+/* Banner */
+.banner-container {
+    width: 100%;
+    height: 40vh;
+    background-color: #fff;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.banner-content {
+    width: 66%;
+    height: inherit;
+    display: inherit;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.banner-text h1,
+.banner-content-2 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2px;
+    padding: 1px;
+}
+
+.banner-text p,
+.banner-content-2 p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 2px;
+    padding: 1px;
+}
+
+.banner-button-container,
+.banner-button-container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-button-container button,
+.banner-button-container-2 button {
+    width: 20rem;
+    height: 4rem;
+    background-color: #000;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+    transition: 0.5s;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.banner-button-container-2 button {
+    background-color: red;
+}
+
+.banner-button-container button:hover,
+.banner-content-2 button:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.banner-button-container > img,
+.banner-button-container-2 > img {
+    width: 5rem;
+    position: relative;
+    bottom: 1rem;
+}
+
+/* Body Content */
+.body-content {
+    width: 100%;
+    height: 100vh;
+    background: url("./img/spiderman_no_way_home.jpg") no-repeat scroll center;
+    background-size: 100% 100vh;
+} 
+
+.body-content-bg {
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-content-2-bg h1 {
+    font-family: 'Comforter', cursive;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 7rem;
+}
+
+/* Movie Content */
+.movie-content-container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0,0,0,0.3); */
+}
+
+.movie-list-1 {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-item {
+    width: 13rem;
+    height: 17rem;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0;
+}
+
+.movie-item h1 {
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+}
+
+.movie-item img {
+    width: 13rem;
+    height: 17rem;
+    object-fit: cover;
+    -webkit-box-reflect: below 2px linear-gradient(tranparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+}
+
+.movie-item img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    background-color: rgba(0,0,0,0.5);
+    opacity: 1;
+}
+
+
+/* Movie Card */
+.movie-card-container {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card-container-bg > h1 {
+    font-family: 'Comforter', cursive;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+    color: red;
+    padding-bottom: 2rem;
+}
+
+.movie-card-container-bg {
+    background-color: rgba(0,0,0,0.33);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card-section {
+    width: 90%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card-section > iframe {
+    width: 100%;
+}
+
+.movie-card {
+    width: 23rem;
+    height: 18rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 7px;
+}
+
+.red {
+    color: red; 
+}
+.red:hover {
+    color: #fff !important;
+}
+
+@font-face {
+    font-family: "goodTimes";
+    src: url("./fonts/good_times.ttf");
+}
+
+.movie-card-text {
+    height: inherit;
+    padding: 0.5rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 700;
+}
+
+.movie-card-text h1 {
+    font-family: "goodTimes";
+    font-size: 3em;
+    margin: 1px;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    letter-spacing: 2px;
+    color: red;
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+}
+
+.movie-card-text span {
+    font-size: 0.5em;
+    /* padding: 1rem 0 0 1rem; */
+    padding: 1rem;
+    letter-spacing: 2px;
+}
+
+.movie-card-text h2, 
+.movie-card-text h3,
+.movie-card-text h4 {
+    margin-bottom: 2px;
+    padding: 0.2rem;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 10px rgb(0 0 0 / 70%);
+}
+
+.movie-card-text p {
+    padding: 0.4rem;
+    width: 90%;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+.movie-card-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card-button-container > button {
+    transition: all .35s cubic-bezier(.37,.26,.35,1);
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0.5rem 5px 5px 2px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.movie-card-button-container > button:hover {
+    background-color: maroon;
+}
+
+.movie-card-button-container button > img {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 0.5rem;
+}
+
+.movie-card-button-container > button:nth-child(2) {
+    background-color: maroon;
+    height: 3rem;
+}
+
+.movie-card-button-container > button:hover:nth-child(2) {
+    background-color: #000 ;
+}
+
+/* Body Content 2 */
+.body-content-2 {
+    width: 100%;
+    height: 100vh;
+    background: url("./img/morbius_movie.jpg") no-repeat fixed center;
+    background-size: 100% 100vh;
+}
+
+.body-content-2-bg {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.7), rgba(0,0,0,1));
+
+}
+
+
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 50vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content a {
+    margin: 1rem 0.3rem;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.footer-content a:hover {
+    color: #fff;
+}
+
+.footer-mention {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.footer-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-author span {
+    color: red;
+}
+
+.footer-author p {
+    letter-spacing: 1px;
+}
+
+.social-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-video {
+    transition: 2s;
+    width: 10rem;
+    height: 12rem;
+}
+
+.footer-video:hover {
+    transform: rotateY(900deg);
+}
+
+.social-icon-container a {
+    margin: 3px;
+    padding: 0;
+}
+
+.social-icon-container a img {
+    transition: 1s;
+    margin: 3px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.social-icon-container a img:hover {
+    transition: 1s;
+    position: relative;
+    bottom: 3px;
+}
+
+
+
+/* Smooth Scrolling */
+/* #section-1 {
+    height: 100vh;
+} */

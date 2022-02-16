@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <header class="header" id="section-1">
+          <div class="wallpaper-bg">
+              <nav class="nav">
+                  <h1>M <img src="./css/img/lens2.gif" alt="lens"/> vie Static</h1>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Movies</a></li>
+                      <li><a href="#">
+                          Browse &#128269;
+                          <!-- <img class="magnifying-glass" src="./css/img/icons/magnifying_glass.png" alt="magnifying_glass"/> -->
+                        </a></li>
+                      <li><a href="#" onClick="featuredMovie();">Featured Movie</a></li>
+                      <li>
+                        <a href="#" class="red" onClick="specialOffer();">Special Offer</a>
+                        <img src="./css/img/red_ribbon.png" alt="red_ribbon" class="red-ribbon"/>
+                      </li>
+                    </ul>
+                </nav>
+                <div class="landing-page-title" id="landing-page-title">
+                    <h1>RESIDENT EVIL:</h1>
+                    <h2>WELCOME TO RACCOON CITY</h2>
+                    <br>
+                    <h3>Streaming Now with Membership</h3>
+                    <a href="#">&#8680; Watch It Now &#8678;</a>
+                    <br>
+                    <button id="landing-page-trailer-button" onclick="toggleTrailer();">
+                        <img src="./css/img/icons/play_btn.png" alt="play_btn"/>
+                        TRAILER
+                    </button>
+                </div>
+                <!-- <iframe id="landing-page-trailer" width="560" height="315" src="https://www.youtube.com/embed/4q6UGCyHZCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            </div>
+      </header>
+      <div class="banner-container" id="section-2">
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>Claim this special offer and get 25% off!</h1>
+                    <p>Enjoy your favorite movies with our special offer for just $6/mo for 3 months.</p>
+                    <div class="banner-button-container">
+                        <button>25% Off Special Offer</button>
+                        <img src="./css/img/red_ribbon.png" alt="red_ribbon"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="body-content" id="body-content">
+          <div class="body-content-bg">
+              <!-- Create a movie card with video embedded -->
+              <div class="movie-card-container">
+                  <div class="movie-card-container-bg">
+                      <h1>Featured Movie</h1>
+                      <div class="movie-card-section">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JfVOs4VSpmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="movie-card-text">
+                                <h1>Spiderman: <span>No Way Home</span></h1>
+                                <h2>Release Date: December 17, 2021</h2>
+                                <h3>Runtime: 2hr 28m</h3>
+                                <h4 class="red">Tom Holland, Zendaya Coleman, Benedict Cumberbatch</h4>
+                                <h4>Action, Adventure, Comedy, Fantasy, Superhero, Sci-Fi</h4>
+                                <p>
+                                    With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no long able to separate how normal life as Peter Parker from the high stakes of being a superhero.
+                                    When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
+                                </p>
+                                <div class="movie-card-button-container">
+                                    <button>Pre-order for $19.99</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+      <div class="body-content-2">
+          <div class="body-content-2-bg">
+              <!-- Body content 2 -->
+              <h1>New Releases</h1>
+
+                <div class="movie-content-container">
+                      <div class="movie-list-1">
+                          <div class="movie-item">
+                              <img src="./css/img/movies/munich_edge_of_war.jpg" alt="Munich Edge of War"/>
+                          </div>
+                          <div class="movie-item">
+                            <img src="./css/img/movies/clean.jpg" alt="Clean"/>
+                        </div>
+                        <div class="movie-item">
+                            <img src="./css/img/movies/slapface.jpg" alt="Slapface"/>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+      </div>
+      <footer class="footer">
+          <!-- Footer Content -->
+          <div class="footer-content">
+              <a href="#" onClick="backToTop()">&#8593; Back To Top &#8593;</a>
+              <div class="social-icon-container">
+                <a href="mailto:csaetern@alphaworks.tech"><img src="./css/img/icons/email.png" alt="email" /></a>
+                <a href="https://www.linkedin.com/in/csaetern530/"><img src="./css/img/icons/linkedin.png" alt="email" /></a>
+                <a href="https://github.com/chaisaetern"><img src="./css/img/icons/github.png" alt="email" /></a>
+              </div>
+              <div class="footer-mention">
+                  <video class="footer-video" autoplay loop muted poster="">
+                    <source src="./css/img/smiley_neon_face.mp4" type="video/mp4">
+                  </video>
+                  <div class="footer-author">
+                      <p>Website Created By: <span>Chai Saetern</span></p>
+                      <p>02/2022</p>
+                      <p>Bitwise Industries/Alpha Works</p>
+                      <p>WP Apprenticeship Assignment 1</p>
+                    </div>
+              </div>
+          </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="./js/main.js"></script>
+  </body>
+</html>
